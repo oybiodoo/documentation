@@ -16,6 +16,9 @@ it's processed, you'll get a dump of the database in return.
    are incompatible with the Upgrade platform - they contain your complete sources, etc. that are not needed for the
    upgrade. Make sure to download a **Dump** instead - either through the Backups tab using the *Download Dump* button
    or through the Builds page by using the *Download Dump* entry of the contextual menu of your latest production build.
+   
+.. warning::
+   Odoo 15 is incompatible with Ubuntu 18 and requires Ubuntu 20.04 or later. Before attempting to import your updated database (test and production) ensure that under your build settings you select Ubuntu 20.04 for your operating system. Failing to do this will result in your branch failing to build and there will be no log entries to indicate this problem.
 
 Test your upgraded database
 ===========================
